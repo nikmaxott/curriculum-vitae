@@ -20,17 +20,6 @@ export class TimelineComponent {
       ]
     },
     {
-      title: 'Senior Software Engineer at eCERTO (Contract)',
-      date: 'October 2023 - December 2023',
-      description: [
-        'Managed and directed the technology team, instituting new software development practices upon transitioning development operations in house.',
-        'Provided leadership and guidance to Junior and Associate engineers, mentoring them in best practices and conducting comprehensive code reviews to maintain high standards of work.',
-        'Oversaw sprint planning sessions and effectively coordinated development activities within the team, ensuring alignment with management objectives and broader strategic goals.',
-        'Played a pivotal role in launching the Lite version of the software, contributing significantly to the strategic objectives of the company.',
-        'Applied React and .NET 7 expertise to enhance application features, refine the existing codebase, and bolster application resilience. Employed key UI/UX principles to optimise user experiences throughout development cycles.',
-      ],
-    },
-    {
       title: 'Software Developer at AEON Geoscience Systems',
       date: 'September 2022 - August 2023',
       description: [
