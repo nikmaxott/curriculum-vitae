@@ -16,8 +16,8 @@ export class TimelineComponent {
         "Spearheading the development and optimization of AISUS's Gemini Platform, enhancing its functionality and performance.",
         'Leading the integration efforts of Machine Learning and Computer Vision technologies into daily operations.',
         'Collaborating closely with cross-functional teams to ideate and implement innovative solutions, resulting in streamlined processes and increased productivity.',
-        'Actively contributing to the technological roadmap, identifying opportunities for enhancements and future-proofing the software infrastructure'
-      ]
+        'Actively contributing to the technological roadmap, identifying opportunities for enhancements and future-proofing the software infrastructure',
+      ],
     },
     {
       title: 'Software Developer at AEON Geoscience Systems',
