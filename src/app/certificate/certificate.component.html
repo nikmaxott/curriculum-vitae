@@ -1,22 +1,23 @@
-<article title="My Projects" id="projects">
-  <h2 i18n class="text-xl mt-4 font-bold">My Projects</h2>
+<article title="Certifications" id="certifications">
+  <h2 i18n class="text-xl mt-4 font-bold">Certification</h2>
   <div *ngFor="let certificate of certifacteData" class="mt-8 print:m-0">
-    <h3 i18n class="text-lg mt-4 italic">{{ certificate.name }}</h3>
-    <p></p>
-    <ul class="space-x-2 my-2 print:m-0 list-none inline">
+    <h3 i18n class="text-lg mt-4 italic">
+      {{ certificate.name }} - {{ certificate.by }}
+    </h3>
+    <p class="space-x-2 my-2 print:m-0 list-none inline">
       <li
         *ngFor="let skill of certificate.skills"
         class="bg-gray-500 px-2 rounded-full print:hidden float-left"
       >
         {{ skill }}
       </li>
-    </ul>
+    </p>
 
     <p>{{ certificate.description }}</p>
     <p class="mt-8 mb-8 print:m-0" *ngIf="certificate.url">
       <a
         href="{{ certificate.url }}"
-        class="underline mr-1"
+        class="underline mr-1 print:hidden"
         target="_blank"
         rel="noopener noreferrer"
         >View Certifcate</a
