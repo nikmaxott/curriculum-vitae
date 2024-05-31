@@ -43,8 +43,7 @@ export class CertificateComponent {
       by: ' Microsoft',
       description: '',
       skills: ['Azure', 'Containers', 'DevOps', 'Kubernetes'],
-      certificateUrl:
-        'https://learn.microsoft.com/en-us/users/NikolausMaximZolnhofer-3144/credentials/626256ba279a07ce',
+      url: 'https://learn.microsoft.com/en-us/users/NikolausMaximZolnhofer-3144/credentials/626256ba279a07ce',
     },
     {
       name: 'Secure Storage for Azure Files and Azure Blob Storage',
@@ -52,8 +51,7 @@ export class CertificateComponent {
       by: ' Microsoft',
       description: '',
       skills: ['Azure', 'Security', 'DevOps'],
-      certificateUrl:
-        'https://learn.microsoft.com/en-us/users/NikolausMaximZolnhofer-3144/credentials/E897BB5586F20769',
+      url: 'https://learn.microsoft.com/en-us/users/NikolausMaximZolnhofer-3144/credentials/E897BB5586F20769',
     },
     {
       name: 'Develop an ASP.NET Core web app that consumes an API',
@@ -67,8 +65,7 @@ export class CertificateComponent {
         'HTML5',
         'TypeScript',
       ],
-      certificateUrl:
-        'https://learn.microsoft.com/en-gb/users/NikolausMaximZolnhofer-3144/credentials/624F553FCB5837A7',
+      url: 'https://learn.microsoft.com/en-gb/users/NikolausMaximZolnhofer-3144/credentials/624F553FCB5837A7',
     },
     {
       name: 'Introduction to User Experience Design',
@@ -76,8 +73,7 @@ export class CertificateComponent {
       by: ' Coursera',
       description: '',
       skills: ['UX Design', 'User Research', 'Prototyping'],
-      certificateUrl:
-        'https://www.coursera.org/account/accomplishments/certificate/3LGLJAYRJMES',
+      url: 'https://www.coursera.org/account/accomplishments/certificate/3LGLJAYRJMES',
     },
   ];
 }
