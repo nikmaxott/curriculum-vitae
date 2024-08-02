@@ -10,10 +10,16 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      title: 'Portfolio & CV',
-      technologies: ['Angular', 'Tailwind', 'Github Actions'],
+      title: 'Fork of Gantt Chart Library',
+      technologies: ['React', 'Vite', 'Github Actions', 'open source'],
       description:
-        'A static website built in Angular to host my CV, and for use as a portfolio. Key deliverables included: a fully responsive design, automatic dark-light mode toggles, and automatic deployments.',
+        "A fork of MaTeMaTuK's Gantt Chart Library, with a focus on updating it for use in company projects and improving it's build process by \
+        moving to Vite from microbundle, adding extended type support, and making improvements to the standard UI elements. \
+        This project was a great learning experience in how to work with open source projects, and how to contribute to them.",
+      link: {
+        url: 'https://github.com/nikmaxott/gantt-task-react',
+        text: 'Github Repository',
+      },
     },
     {
       title: 'Django Blog and Library Project',

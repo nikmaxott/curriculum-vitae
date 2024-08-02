@@ -4,17 +4,19 @@
     <h3 i18n class="text-lg mt-4 italic">
       {{ certificate.name }} - {{ certificate.by }}
     </h3>
-    <p class="space-x-2 my-2 print:m-0 list-none inline">
+    <ul class="space-x-2 my-2 print:m-0 list-none flex">
       <li
         *ngFor="let skill of certificate.skills"
         class="bg-gray-500 px-2 rounded-full print:hidden float-left"
       >
         {{ skill }}
       </li>
-    </p>
+    </ul>
 
-    <p>{{ certificate.description }}</p>
-    <p class="mt-8 mb-8 print:m-0" *ngIf="certificate.url">
+    <p *ngIf="certificate.description" class="mt-2">
+      {{ certificate.description }}
+    </p>
+    <p class="my-4 print:m-0" *ngIf="certificate.url">
       <a
         href="{{ certificate.url }}"
         class="underline mr-1 print:hidden"

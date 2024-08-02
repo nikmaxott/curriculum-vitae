@@ -10,10 +10,10 @@
       >
     </div>
     <p>{{ project.description }}</p>
-    <p class="mt-8 mb-8 print:m-0" *ngIf="project.link">
+    <p class="mt-8 print:m-0" *ngIf="project.link">
       <a
         href="{{ project.link.url }}"
-        class="underline mr-1"
+        class="underline mr-1 mt-4"
         target="_blank"
         rel="noopener noreferrer"
         >{{ project.link.text }}</a
