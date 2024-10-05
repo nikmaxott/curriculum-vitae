@@ -64,13 +64,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "de": {
-              "browserTarget": "nikmaxott-portfolio:build:development,de"
+              "buildTarget": "nikmaxott-portfolio:build:development,de"
             },
             "production": {
-              "browserTarget": "nikmaxott-portfolio:build:production"
+              "buildTarget": "nikmaxott-portfolio:build:production"
             },
             "development": {
-              "browserTarget": "nikmaxott-portfolio:build:development"
+              "buildTarget": "nikmaxott-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nikmaxott-portfolio:build"
+            "buildTarget": "nikmaxott-portfolio:build"
           }
         },
         "test": {
@@ -114,9 +114,7 @@
     }
   },
   "cli": {
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ],
+    "schematicCollections": ["@angular-eslint/schematics"],
     "analytics": false
   }
 }

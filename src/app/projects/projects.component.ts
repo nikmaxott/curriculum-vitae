@@ -10,10 +10,16 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      title: 'Portfolio & CV',
-      technologies: ['Angular', 'Tailwind', 'Github Actions'],
+      title: 'Fork of Gantt Chart Library',
+      technologies: ['React', 'Vite', 'Github Actions', 'open source'],
       description:
-        'A static website built in Angular to host my CV, and for use as a portfolio. Key deliverables included: a fully responsive design, automatic dark-light mode toggles, and automatic deployments.',
+        "A fork of MaTeMaTuK's Gantt Chart Library, with a focus on updating it for use in company projects and improving it's build process by \
+        moving to Vite from microbundle, adding extended type support, and making improvements to the standard UI elements. \
+        This project was a great learning experience in how to work with open source projects, and how to contribute to them.",
+      link: {
+        url: 'https://github.com/nikmaxott/gantt-task-react',
+        text: 'Github Repository',
+      },
     },
     {
       title: 'Django Blog and Library Project',
@@ -27,16 +33,6 @@ export class ProjectsComponent {
       image: {
         src: 'https://www.nikmaxott.org/wp-content/uploads/2023/09/Screenshot-2023-09-18-at-14-25-39-Django-Blog.png',
         alt: 'Screenshot of a blog post in the Django Blog Project',
-      },
-    },
-    {
-      title: 'Repair Portal - ERP System for TV Repairs',
-      technologies: ['React', 'Superbase'],
-      description:
-        'A project with a React frontend, and a custom Superbase backend, with full authentication and user management. Hosted on premises, highlights include allowing field technicians to take pictures, get customer signatures, and optimisation of drivers daily routes based on starting and ending location, including parts pickup.',
-      image: {
-        src: 'https://i0.wp.com/www.nikmaxott.org/wp-content/uploads/2022/07/Screenshot-2022-07-31-at-13-18-15-Superbase-Repair-Portal.png',
-        alt: 'Screenshot of Superbase Repair Portal, showing Account Settings',
       },
     },
     {
