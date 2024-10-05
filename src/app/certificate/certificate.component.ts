@@ -38,6 +38,14 @@ export class CertificateComponent {
       url: 'https://www.freecodecamp.org/certification/nikmaxott/foundational-c-sharp-with-microsoft',
     },
     {
+      name: 'Configure secure access to your workloads using Azure networking',
+      date: 'July 2024',
+      by: ' Microsoft',
+      description: '',
+      skills: ['Azure', 'Networking', 'Security', 'DevOps'],
+      url: 'https://learn.microsoft.com/en-gb/users/nikolausmaximzolnhofer-3144/credentials/24d468a9d9855eb5',
+    },
+    {
       name: 'Deply cloud-native apps using Azure Container Apps',
       date: 'May 2024',
       by: ' Microsoft',

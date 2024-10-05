@@ -36,16 +36,6 @@ export class ProjectsComponent {
       },
     },
     {
-      title: 'Repair Portal - ERP System for TV Repairs',
-      technologies: ['React', 'Superbase'],
-      description:
-        'A project with a React frontend, and a custom Superbase backend, with full authentication and user management. Hosted on premises, highlights include allowing field technicians to take pictures, get customer signatures, and optimisation of drivers daily routes based on starting and ending location, including parts pickup.',
-      image: {
-        src: 'https://i0.wp.com/www.nikmaxott.org/wp-content/uploads/2022/07/Screenshot-2022-07-31-at-13-18-15-Superbase-Repair-Portal.png',
-        alt: 'Screenshot of Superbase Repair Portal, showing Account Settings',
-      },
-    },
-    {
       title: 'Superbase Shop - SaaS Shop Design',
       technologies: ['Gatsby', 'Bootstrap', 'Auth0'],
       description:
