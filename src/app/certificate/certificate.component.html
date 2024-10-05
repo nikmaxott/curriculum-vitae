@@ -4,7 +4,7 @@
     <h3 i18n class="text-lg mt-4 italic">
       {{ certificate.name }} - {{ certificate.by }}
     </h3>
-    <ul class="space-x-2 my-2 print:m-0 list-none flex">
+    <ul class="space-x-2 my-2 print:m-0 list-none md:flex hidden">
       <li
         *ngFor="let skill of certificate.skills"
         class="bg-gray-500 px-2 rounded-full print:hidden float-left"

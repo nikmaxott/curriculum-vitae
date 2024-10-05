@@ -2,7 +2,6 @@
   "name": "nikmaxott-portfolio",
   "version": "1.1.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
