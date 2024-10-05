@@ -11,12 +11,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": {
-              "base": "dist/nikmaxott-portfolio"
-            },
+            "outputPath": "dist/nikmaxott-portfolio",
             "index": "src/index.html",
+            "main": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -26,8 +25,8 @@
             ],
             "styles": ["src/styles.css"],
             "scripts": [],
-            "serviceWorker": "ngsw-config.json",
-            "browser": "src/main.ts"
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "de": {
@@ -50,7 +49,9 @@
               "outputHashing": "all"
             },
             "development": {
+              "buildOptimizer": false,
               "optimization": false,
+              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true,
