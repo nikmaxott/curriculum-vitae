@@ -19,6 +19,10 @@ export class ProjectsComponent {
         url: 'https://github.com/nikmaxott/gantt-task-react',
         text: 'Github Repository',
       },
+      image: {
+        src: 'https://github.com/user-attachments/assets/52dea11f-1066-4e08-a0f1-bc76a985db6a',
+        alt: 'Screenshot of the Gantt Chart Library',
+      },
     },
     {
       title: 'Django Blog and Library Project',
@@ -42,10 +46,6 @@ export class ProjectsComponent {
       link: {
         url: 'https://shop.superbase.com/',
         text: 'shop.superbase.com',
-      },
-      image: {
-        src: 'https://i0.wp.com/www.nikmaxott.org/wp-content/uploads/2022/07/image-2.png',
-        alt: 'Screenshot of shop.superbase.com showcasing the Repair Portal product',
       },
     },
   ];
