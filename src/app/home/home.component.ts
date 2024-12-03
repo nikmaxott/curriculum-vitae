@@ -6,7 +6,6 @@ import { CertificateComponent } from '../certificate/certificate.component';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
   templateUrl: './home.component.html',
   imports: [
     CommonModule,

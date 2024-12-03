@@ -3,12 +3,26 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-certificate',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './certificate.component.html',
 })
 export class CertificateComponent {
   certifacteData = [
+    {
+      name: 'Software Architecture & Design of Modern Large Scale Systems',
+      by: 'udemy',
+      date: 'October 2024',
+      description:
+        "This course design highly scalable, highly available and performant software systems, Define the system's technical requirements, high level components and API",
+      url: 'https://www.ude.my/UC-3d55e67e-bc9c-4dd2-9e4b-7201eb576c1a/',
+      skills: [
+        'Software Architecture',
+        'Microservices',
+        'REST APIs',
+        'Database Design',
+        'Project Planning',
+      ],
+    },
     {
       name: 'Essential Supervisory Skills',
       date: 'May 2024',
@@ -36,6 +50,14 @@ export class CertificateComponent {
         'Azure',
       ],
       url: 'https://www.freecodecamp.org/certification/nikmaxott/foundational-c-sharp-with-microsoft',
+    },
+    {
+      name: 'Build distributed apps with .NET Aspire',
+      date: 'November 2024',
+      by: 'Microsoft',
+      description: '',
+      skills: ['Azure', 'Containers', '.NET', 'Microservices'],
+      url: 'https://learn.microsoft.com/en-gb/users/NikolausMaximZolnhofer-3144/credentials/A4B2B07780997E6F',
     },
     {
       name: 'Configure secure access to your workloads using Azure networking',
