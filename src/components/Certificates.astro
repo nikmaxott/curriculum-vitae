@@ -1,0 +1,137 @@
+---
+const certs = [
+  {
+    name: "Software Architecture & Design of Modern Large Scale Systems",
+    by: "udemy",
+    date: "October 2024",
+    description:
+      "This course design highly scalable, highly available and performant software systems, Define the system's technical requirements, high level components and API",
+    url: "https://www.ude.my/UC-3d55e67e-bc9c-4dd2-9e4b-7201eb576c1a/",
+    skills: [
+      "Software Architecture",
+      "Microservices",
+      "REST APIs",
+      "Database Design",
+      "Project Planning",
+    ],
+  },
+  {
+    name: "Essential Supervisory Skills",
+    date: "May 2024",
+    by: " Aberdeen & Grampian Chamber of Commerce",
+    description:
+      "This course is designed to provide new and existing supervisors with the skills and knowledge to effectively manage their teams. The course covers a range of topics including communication, motivation, delegation, and performance management.",
+    skills: [
+      "Project Planning",
+      "Team Management",
+      "Communication",
+      "Performance Management",
+    ],
+  },
+  {
+    name: "Foundational C#",
+    date: "January 2024",
+    by: " FreeCodeCamp & Microsoft",
+    description: "",
+    skills: [
+      "C#",
+      "Object-Oriented Programming",
+      "Unit Testing",
+      "Debugging",
+      "Back-End Development",
+      "Azure",
+    ],
+    url: "https://www.freecodecamp.org/certification/nikmaxott/foundational-c-sharp-with-microsoft",
+  },
+  {
+    name: "Build distributed apps with .NET Aspire",
+    date: "November 2024",
+    by: "Microsoft",
+    description: "",
+    skills: ["Azure", "Containers", ".NET", "Microservices"],
+    url: "https://learn.microsoft.com/en-gb/users/NikolausMaximZolnhofer-3144/credentials/A4B2B07780997E6F",
+  },
+  {
+    name: "Configure secure access to your workloads using Azure networking",
+    date: "July 2024",
+    by: " Microsoft",
+    description: "",
+    skills: ["Azure", "Networking", "Security", "DevOps"],
+    url: "https://learn.microsoft.com/en-gb/users/nikolausmaximzolnhofer-3144/credentials/24d468a9d9855eb5",
+  },
+  {
+    name: "Deply cloud-native apps using Azure Container Apps",
+    date: "May 2024",
+    by: " Microsoft",
+    description: "",
+    skills: ["Azure", "Containers", "DevOps", "Kubernetes"],
+    url: "https://learn.microsoft.com/en-us/users/NikolausMaximZolnhofer-3144/credentials/626256ba279a07ce",
+  },
+  {
+    name: "Secure Storage for Azure Files and Azure Blob Storage",
+    date: "March 2024",
+    by: " Microsoft",
+    description: "",
+    skills: ["Azure", "Security", "DevOps"],
+    url: "https://learn.microsoft.com/en-us/users/NikolausMaximZolnhofer-3144/credentials/E897BB5586F20769",
+  },
+  {
+    name: "Develop an ASP.NET Core web app that consumes an API",
+    date: "December 2023",
+    by: " Microsoft",
+    description: "",
+    skills: [
+      "ASP.NET Core",
+      "Entity Framework",
+      "Azure",
+      "HTML5",
+      "TypeScript",
+    ],
+    url: "https://learn.microsoft.com/en-gb/users/NikolausMaximZolnhofer-3144/credentials/624F553FCB5837A7",
+  },
+  {
+    name: "Introduction to User Experience Design",
+    date: "January 2022",
+    by: " Coursera",
+    description: "",
+    skills: ["UX Design", "User Research", "Prototyping"],
+    url: "https://www.coursera.org/account/accomplishments/cert/3LGLJAYRJMES",
+  },
+];
+---
+
+<article title="Certifications" id="certifications">
+  <h2 class="text-xl mt-4 font-bold">Certification</h2>
+  {
+    certs.map((cert) => (
+      <div class="mt-8 print:m-0">
+        <h3 class="text-lg mt-4 italic">
+          {cert.url ? (
+            <a
+              href={cert.url}
+              class="underline mr-1 print:hidden"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {cert.name}
+            </a>
+          ) : (
+            <p>{cert.name}</p>
+          )}
+        </h3>
+        <p class="italic text-gray-600 dark:text-gray-300 text-sm">
+          {cert.by} - {cert.date}
+        </p>
+        <ul class="print:m-0 list-none md:flow-root hidden">
+          {cert.skills.map((skill) => (
+            <li class="bg-gray-500 mt-2 px-2 mr-2 rounded-full print:hidden float-left text-center flex items-center justify-center text-nowrap">
+              {skill}
+            </li>
+          ))}
+        </ul>
+
+        {cert.description ? <p class="mt-2">{cert.description}</p> : null}
+      </div>
+    ))
+  }
+</article>
