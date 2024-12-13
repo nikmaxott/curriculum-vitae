@@ -11,4 +11,6 @@ jobs:
           node-version: "20"
           cache: "npm"
       - run: npm ci
+        env:
+          HUSKY: 0
       - run: npx prettier --check  src/**
