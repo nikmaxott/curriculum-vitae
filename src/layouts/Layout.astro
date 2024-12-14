@@ -59,6 +59,7 @@ import "remixicon/fonts/remixicon.css";
       content="CV for Nikolaus Zolnhofer a Fullstack Developer based in Aberdeen, Scotland. Specialised in TypeScript, React, and C# .NET"
     />
     <meta name="twitter:image" content="/android-chrome-512x512.png" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css" />
 
     <meta name="theme-color" content="#ffffff" />
   </head>
@@ -70,19 +71,22 @@ import "remixicon/fonts/remixicon.css";
         class="flex justify-center md:justify-between p-3 bg-gray-300 dark:bg-gray-900 print:hidden fixed top-0 w-full z-10"
       >
         <div class="items-center md:block hidden">
-          <img src={logo.src} width="115" height="48" alt="nikmaxott logo" />
+          <img src={logo.src} width="100" height="50" alt="nikmaxott logo" />
         </div>
         <nav class="flex items-center mr-4">
-          <ul class="flex">
+          <ul class="flex items-center">
             <li class="m-2">
               <a href="https://www.nikmaxott.org/contact/" target="_blank"
                 >Contact</a
               >
             </li>
-            <ThemeIcon />
+            <li class="m-2">
+              <ThemeIcon />
+            </li>
 
             <li class="m-2">
-              <button onclick="print();"><i class="ri-printer-line"></i></button
+              <button onclick="print();" aria-label="Print my CV"
+                ><i class="ri-printer-line"></i></button
               >
             </li>
           </ul>
@@ -102,11 +106,16 @@ import "remixicon/fonts/remixicon.css";
             <li class="p-1">
               <a
                 href="https://www.linkedin.com/in/nikolaus-zolnhofer/"
-                target="_blank"><i class="ri-linkedin-line ri-lg"></i></a
+                target="_blank"
+                aria-label="Find me and connect with me on my LinkedIn"
+                ><i class="ri-linkedin-line ri-lg"></i></a
               >
             </li>
             <li class="p-1">
-              <a href="https://www.nikmaxott.org/" target="_blank"
+              <a
+                href="https://www.nikmaxott.org/"
+                target="_blank"
+                aria-label="Read more of my thoughts on my blog"
                 ><i class="ri-global-line ri-lg"></i></a
               >
             </li>
@@ -118,9 +127,6 @@ import "remixicon/fonts/remixicon.css";
 </html>
 
 <style>
-  /* CSS */
-  @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
-
   html,
   body {
     margin: 0;
