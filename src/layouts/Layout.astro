@@ -1,7 +1,9 @@
 ---
-import logo from "../assets/nikmaxott-title.jpg";
-import ThemeIcon from "../components/ThemeIcon.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import "remixicon/fonts/remixicon.css";
+
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -67,61 +69,11 @@ import "remixicon/fonts/remixicon.css";
     <div
       class="dark:bg-gray-600 bg-white min-h-screen dark:text-white text-gray-900"
     >
-      <header
-        class="flex justify-center md:justify-between p-3 bg-gray-300 dark:bg-gray-900 print:hidden fixed top-0 w-full z-10"
-      >
-        <div class="items-center md:block hidden">
-          <img src={logo.src} width="100" height="50" alt="nikmaxott logo" />
-        </div>
-        <nav class="flex items-center mr-4">
-          <ul class="flex items-center">
-            <li class="m-2">
-              <a href="https://www.nikmaxott.org/contact/" target="_blank"
-                >Contact</a
-              >
-            </li>
-            <li class="m-2">
-              <ThemeIcon />
-            </li>
-
-            <li class="m-2">
-              <button onclick="print();" aria-label="Print my CV"
-                ><i class="ri-printer-line"></i></button
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <section class="top-16 m-4 pt-20 px-2 lg:px-4 mb-0 print:m-0 print:p-0">
         <slot />
       </section>
-      <footer class="print:hidden">
-        <div
-          class="flex justify-between p-3 ml-4 mr-4 flex-col-reverse lg:flex-row"
-        >
-          <span class="pt-2 lg:pt-0">
-            Made with &hearts; in Scotland. &copy; nikmaxott 2024
-          </span>
-          <ul class="flex items-center justify-center">
-            <li class="p-1">
-              <a
-                href="https://www.linkedin.com/in/nikolaus-zolnhofer/"
-                target="_blank"
-                aria-label="Find me and connect with me on my LinkedIn"
-                ><i class="ri-linkedin-line ri-lg"></i></a
-              >
-            </li>
-            <li class="p-1">
-              <a
-                href="https://www.nikmaxott.org/"
-                target="_blank"
-                aria-label="Read more of my thoughts on my blog"
-                ><i class="ri-global-line ri-lg"></i></a
-              >
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <Footer />
     </div>
   </body>
 </html>

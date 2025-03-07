@@ -1,0 +1,48 @@
+---
+import Social from "./Social.astro";
+---
+
+<footer class="print:hidden">
+  <div
+    class="flex justify-between items-center p-3 ml-4 mr-4 flex-col-reverse lg:flex-row w-full"
+  >
+    <span class="pt-2 lg:pt-0">
+      Made with &hearts; in Scotland. &copy; nikmaxott 2024
+    </span>
+    <ul class="flex items-center justify-center">
+      <li class="p-1">
+        <a
+          href="https://www.linkedin.com/in/nikolaus-zolnhofer/"
+          target="_blank"
+          aria-label="Find me and connect with me on my LinkedIn"
+          ><i class="ri-linkedin-line ri-lg"></i></a
+        >
+      </li>
+      <li class="p-1">
+        <a
+          href="https://www.github.com/nikmaxott"
+          target="_blank"
+          aria-label="Find my projects"
+        >
+          <i class="ri-github-line ri-lg"></i>
+        </a>
+      </li>
+      <li class="p-1">
+        <a
+          href="https://www.nikmaxott.org/"
+          target="_blank"
+          aria-label="Read more of my thoughts on my blog"
+          ><i class="ri-global-line ri-lg"></i></a
+        >
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>

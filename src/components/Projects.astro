@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 const projects = [
   {
     title: "Fork of Gantt Chart Library",
@@ -84,11 +86,12 @@ const projects = [
           </p>
         ) : null}
         {project.image ? (
-          <img
+          <Image
             src={project.image.src}
-            width="640"
-            class="ml-auto mr-auto mt-8 print:hidden md:block hidden"
             alt={project.image.alt}
+            class="ml-auto mr-auto mt-8 print:hidden md:block hidden"
+            width="640"
+            inferSize={true}
           />
         ) : null}
       </div>
