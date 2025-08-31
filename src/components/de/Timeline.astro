@@ -1,7 +1,7 @@
 ---
 const timeline = [
   {
-    title: "Fullstack Software Engineer at AISUS",
+    title: "Full Stack Softwareentwickler bei AISUS",
     date: "January 2024 - Present",
     description: [
       "Spearheading the development and optimization of AISUS's Gemini Platform, enhancing its functionality and performance.",
@@ -11,7 +11,7 @@ const timeline = [
     ],
   },
   {
-    title: "Software Developer at AEON Geoscience Systems",
+    title: "Softwareentwickler bei AEON Geoscience Systems",
     date: "September 2022 - August 2023",
     description: [
       "Extensively worked with React and Ruby on Rails to upgrade and extend the existing PROEX web application. Including developing new components, implementing bug fixes, and improving application performance.",
@@ -22,7 +22,7 @@ const timeline = [
     ],
   },
   {
-    title: "IT & Business Support at DK AVS",
+    title: "IT- und Business-Support bei DK AVS",
     date: "June 2018 - September 2022",
     description: [
       "Worked extensively in React, HTML, CSS, ES2023 JavaScript, and Redux, to enhance company web systems, including improved user interfaces and increased website speed.",
@@ -35,18 +35,21 @@ const timeline = [
 ];
 ---
 
-{
-  timeline.map((job) => (
-    <article class="mt-2">
-      <div class="flex justify-between flex-col-reverse md:flex-row">
-        <h3 class="text-lg">{job.title}</h3>
-        <p class="italic text-gray-600 dark:text-gray-300 mr-8">{job.date}</p>
-      </div>
-      <ul class="list-disc ml-4">
-        {job.description.map((desc) => (
-          <li>{desc}</li>
-        ))}
-      </ul>
-    </article>
-  ))
-}
+<article title="Lebenslauf" id="timeline">
+  <h2 class="text-xl font-bold print:mt-4">Lebenslauf</h2>
+  {
+    timeline.map((job) => (
+      <article class="mt-2">
+        <div class="flex justify-between flex-col-reverse md:flex-row">
+          <h3 class="text-lg">{job.title}</h3>
+          <p class="italic text-gray-600 dark:text-gray-300 mr-8">{job.date}</p>
+        </div>
+        <ul class="list-disc ml-4">
+          {job.description.map((desc) => (
+            <li>{desc}</li>
+          ))}
+        </ul>
+      </article>
+    ))
+  }
+</article>

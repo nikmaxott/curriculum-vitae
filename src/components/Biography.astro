@@ -2,13 +2,13 @@
 import { Image } from "astro:assets";
 ---
 
-<h1 class="text-2xl mt-2">Hallo ich bin der Nikolaus!</h1>
+<h1 class="text-2xl mt-2">Hello, I'm Nikolaus!</h1>
 <Image
   src="https://www.nikmaxott.org/wp-content/uploads/2023/09/Nikolaus-3.jpg"
   class="rounded-[50%] object-cover m-2 lg:m-8 lg:mr-16 print:hidden w-64 h-64 lg:w-96 lg:h-96"
-  alt="A portrait of me, wearing a blue jumper with a collared patterned shirt"
+  alt="A portrait of a blonde man, wearing a blue jumper with a collared patterned shirt"
   inferSize={true}
-  loading={"eager"}
+  loading="eager"
 />
 
 <h2 class="text-xl mt-4 mb-2 font-bold" id="about">About me</h2>
@@ -263,25 +263,24 @@ import { Image } from "astro:assets";
 <article>
   <h3 class="mt-4 font-bold print:m-0">Languages</h3>
   <p>English (Fluent) and German (Fluent).</p>
-
-  <article title="Education">
-    <h2 class="text-xl mt-4 font-bold print:m-0">Education</h2>
-    <p class="font-extrabold">
-      BEng in Mechanical Engineering at University of Aberdeen
-    </p>
-    <p><span class="font-bold">Classification</span>: 2:1 (Hons)</p>
-    <p>
-      <span class="font-bold">Dissertation</span>: Installability Study for
-      Steel Catenary Risers (SCR) in Deep Water
-    </p>
-    <p>
-      <span class="font-bold">Year Abroad</span>: The University of Hong Kong
-      (HKU)
-    </p>
-    <p>
-      <span class="font-bold">Relevant Modules:</span> Enterprise Computing and Business,
-      Advanced Web Application Development, Electronic Systems, Project and Safety
-      Management, Engineering Analysis and Methods
-    </p>
-  </article>
+</article>
+<article title="Education">
+  <h2 class="text-xl mt-4 font-bold print:m-0">Education</h2>
+  <p class="font-extrabold">
+    BEng in Mechanical Engineering at University of Aberdeen
+  </p>
+  <p><span class="font-bold">Classification</span>: 2:1 (Hons)</p>
+  <p>
+    <span class="font-bold">Dissertation</span>: Installability Study for Steel
+    Catenary Risers (SCR) in Deep Water
+  </p>
+  <p>
+    <span class="font-bold">Year Abroad</span>: The University of Hong Kong
+    (HKU)
+  </p>
+  <p>
+    <span class="font-bold">Relevant Modules:</span> Enterprise Computing and Business,
+    Advanced Web Application Development, Electronic Systems, Project and Safety
+    Management, Engineering Analysis and Methods
+  </p>
 </article>
