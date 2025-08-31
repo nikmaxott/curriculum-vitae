@@ -1,7 +1,7 @@
 ---
 const locale = Astro.currentLocale;
 import NavigationDefault from "./Navigation.astro";
-import NavigationGerman from "./Navigation.de.astro";
+import Navigation from "./de/Navigation.astro";
 import logo from "../assets/nikmaxott-title.jpg";
 ---
 
@@ -13,6 +13,6 @@ import logo from "../assets/nikmaxott-title.jpg";
   </div>
 
   <nav class="flex items-center mr-4">
-    {locale != "de" ? <NavigationDefault /> : <NavigationGerman />}
+    {locale != "de" ? <NavigationDefault /> : <Navigation />}
   </nav>
 </header>
