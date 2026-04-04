@@ -20,7 +20,7 @@ const projects = [
       text: "Github Repository",
     },
     image: {
-      src: "https://github.com/user-attachments/assets/52dea11f-1066-4e08-a0f1-bc76a985db6a",
+      src: "https://www.nikmaxott.org/wp-content/uploads/2026/04/391944743-52dea11f-1066-4e08-a0f1-bc76a985db6a.png",
       alt: "Screenshot of the Gantt Chart Library",
     },
   },
@@ -46,7 +46,13 @@ const projects = [
   },
   {
     title: "Personal CV Site",
-    technologies: ["Astro", "TailwindCSS", "Github Actions", "Javascript", "Angular"],
+    technologies: [
+      "Astro",
+      "TailwindCSS",
+      "Github Actions",
+      "Javascript",
+      "Angular",
+    ],
     description:
       "This site is built using Astro, a static site generator, and TailwindCSS for styling. It is deployed via Github Actions. This project was a great learning experience in how to work with Astro and TailwindCSS.\
       Originally built with Angular, but later migrated to Astro as it was a better fit for a simple static site. It also provided better internationalization options and increased performance.",
@@ -90,7 +96,6 @@ const projects = [
             src={project.image.src}
             alt={project.image.alt}
             class="ml-auto mr-auto mt-8 print:hidden md:block hidden"
-            width="640"
             inferSize={true}
           />
         ) : null}

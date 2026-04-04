@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 const projects = [
   {
     title: "Fork of Gantt Chart Library",
@@ -13,7 +15,7 @@ const projects = [
       text: "Github Repository",
     },
     image: {
-      src: "https://github.com/user-attachments/assets/52dea11f-1066-4e08-a0f1-bc76a985db6a",
+      src: "https://www.nikmaxott.org/wp-content/uploads/2026/04/391944743-52dea11f-1066-4e08-a0f1-bc76a985db6a.png",
       alt: "Screenshot der Gantt Chart Library",
     },
   },
@@ -33,7 +35,13 @@ const projects = [
   },
   {
     title: "Personal CV Site",
-    technologies: ["Astro", "TailwindCSS", "Github Actions", "Javascript", "Angular"],
+    technologies: [
+      "Astro",
+      "TailwindCSS",
+      "Github Actions",
+      "Javascript",
+      "Angular",
+    ],
     description:
       "Ein Projekt gebaut mit Astro und TailwindCSS, das über Github Actions deployed wird. \
       Dieses Projekt war eine großartige Lernerfahrung, vor allem weil es ursprünglich mit Angular gebaut wurde, aber später zu Astro migriert wurde,\
@@ -74,11 +82,11 @@ const projects = [
           </p>
         ) : null}
         {project.image ? (
-          <img
+          <Image
             src={project.image.src}
-            width="640"
-            class="ml-auto mr-auto mt-8 print:hidden md:block hidden"
             alt={project.image.alt}
+            class="ml-auto mr-auto mt-8 print:hidden md:block hidden"
+            inferSize={true}
           />
         ) : null}
       </div>
